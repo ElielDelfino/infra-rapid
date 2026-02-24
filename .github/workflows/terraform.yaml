@@ -34,7 +34,7 @@ permissions:
   id-token: write
   contents: read
 
-  jobs: 
+jobs: 
   job1:
     name: Terraform
     runs-on: ubuntu-latest
