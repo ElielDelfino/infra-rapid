@@ -117,6 +117,6 @@ resource "aws_iam_role" "ecr_ec2_kunlatek" {
   })
 }
 resource "aws_iam_role_policy_attachment" "ecr_readonly" {
-  role       = aws_iam_role.ecr_ec2.name
+  role       = aws_iam_role.ecr_ec2_kunlatek.name
   policy_arn = "arn:aws:iam::aws:policy/AmazonEC2ContainerRegistryReadOnly"
 }
