@@ -46,7 +46,7 @@ jobs:
       - name: "Configure AWS Credentials"
         uses: aws-actions/configure-aws-credentials@v5.1.1
         with: 
-          role-to-assume: arn:aws:iam::890871562295:role/Kunlatek-Administrado-API
+          role-to-assume: ${{ secrets.AWS_ROLE_TO_ASSUME }}
           aws-region: us-east-2
 
       - name: HashiCorp - Setup Terraform
